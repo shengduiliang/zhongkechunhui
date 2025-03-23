@@ -49,7 +49,7 @@ const INavbarItems = [
   },
   {
     label: "中科活性肽(专业版)",
-    href: "#",
+    href: "/profession",
     match: (pathname: string) => pathname === '/profession'
   },
   {
