@@ -32,19 +32,19 @@ export default function Footer() {
           <div className="text-center">官方直营</div>
           <div className="text-center mt-2">——</div>
           <div className="flex gap-2 mt-3">
-            <Image src='/tiktok.png' width={31} height={31} alt="抖音图标" className="w-[30px]" />
-            <Image src='/taobao.png' width={31} height={31} alt="淘宝图标" className="w-[31px]" />
-            <Image src='/miniprogram.png' width={31} height={31} alt="微信小程序图标" className="w-[31px]" />
+            <Image src='/footer/tiktok.png' width={31} height={31} alt="抖音图标" className="w-[30px]" />
+            <Image src='/footer/taobao.png' width={31} height={31} alt="淘宝图标" className="w-[31px]" />
+            <Image src='/footer/miniprogram.png' width={31} height={31} alt="微信小程序图标" className="w-[31px]" />
           </div>
         </div>
         <div className="direct-sales">
           <div className="text-center">关注我们</div>
           <div className="text-center mt-2">——</div>
           <div className="flex gap-2 mt-3">
-            <Image src='/tiktok.png' width={31} height={31} alt="抖音图标" className="w-[31px]" />
-            <Image src='/weibo.png' width={31} height={31} alt="微信小程序图标" className="w-[31px]" />
-            <Image src='/xiaohongshu.png' width={31} height={31} alt="淘宝图标" className="w-[31px]" />
-            <Image src='/miniprogram.png' width={31} height={31} alt="微信小程序图标" className="w-[31px]" />
+            <Image src='/footer/tiktok.png' width={31} height={31} alt="抖音图标" className="w-[31px]" />
+            <Image src='/footer/weibo.png' width={31} height={31} alt="微信小程序图标" className="w-[31px]" />
+            <Image src='/footer/xiaohongshu.png' width={31} height={31} alt="淘宝图标" className="w-[31px]" />
+            <Image src='/footer/miniprogram.png' width={31} height={31} alt="微信小程序图标" className="w-[31px]" />
           </div>
         </div>
       </div>

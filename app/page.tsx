@@ -11,17 +11,17 @@ const Banner = () => {
       <CarouselContent>
         <CarouselItem>
           <div className="w-full h-[709px] relative">
-            <Image src='/carousel-0.jpg' fill alt="banner" className="object-cover object-center" />
+            <Image src='/home/carousel-0.jpg' fill alt="banner" className="object-cover object-center" />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="w-full h-[709px] relative">
-            <Image src='/carousel-1.jpg' fill alt="banner" className="object-cover object-center" />
+            <Image src='/home/carousel-1.jpg' fill alt="banner" className="object-cover object-center" />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className="w-full h-[709px] relative">
-            <Image src='/carousel-2.jpg' fill alt="banner" className="object-cover object-center" />
+            <Image src='/home/carousel-2.jpg' fill alt="banner" className="object-cover object-center" />
           </div>
         </CarouselItem>
       </CarouselContent>
@@ -36,16 +36,16 @@ export default function Home() {
     <div className="home-page">
       <Banner />
       <ContentWrapper className="mt-16">
-        <Image src={'/home-1.jpg'} width={1200} height={709} alt="banner" />
+        <Image src={'/home/home-1.jpg'} width={1200} height={709} alt="banner" />
       </ContentWrapper>
       <ContentWrapper className="mt-16">
-        <Image src={'/home-2.jpg'} width={1200} height={709} alt="banner" />
+        <Image src={'/home/home-2.jpg'} width={1200} height={709} alt="banner" />
       </ContentWrapper> 
       <ContentWrapper>
-        <Image src={'/home-3.jpg'} width={1200} height={709} alt="banner" />
+        <Image src={'/home/home-3.jpg'} width={1200} height={709} alt="banner" />
       </ContentWrapper>
       <ContentWrapper>
-        <Image src={'/home-4.jpg'} width={1200} height={709} alt="banner" />
+        <Image src={'/home/home-4.jpg'} width={1200} height={709} alt="banner" />
       </ContentWrapper>
     </div>
   );
