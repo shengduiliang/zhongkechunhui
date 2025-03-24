@@ -170,11 +170,11 @@ const HotSalesContent = () => {
   return (
     <ContentWrapper className="mt-20">
       <div className="text-3xl font-bold text-black ml-4">热门产品</div>
-      <Separator className="my-6 bg-black h-[1px]" />
+      <Separator className="mt-6 bg-black h-[1px]" />
       <div className="flex flex-wrap justify-around">
         {
           hotSalesList.map((item, index) => (
-            <div className="col-4 px-8 mt-2" key={index}>
+            <div className="col-4 px-8" key={index}>
               <Image src={item.img} width={300} height={300} alt="banner" />
               <Separator className="mt-2 bg-black h-[1px]" />
               <div className="flex justify-between mt-2">
@@ -203,11 +203,11 @@ const HotSalesOfflineContent = () => {
   return (
     <ContentWrapper className="my-20">
       <div className="text-3xl font-bold text-black ml-4">热门线下款</div>
-      <Separator className="my-6 bg-black h-[1px]" />
+      <Separator className="mt-6 bg-black h-[1px]" />
       <div className="flex flex-wrap justify-around">
         {
           hotSalesOfflineList.map((item, index) => (
-            <div className="col-4 px-8 mt-2" key={index}>
+            <div className="col-4 px-8" key={index}>
               <Image src={item.img} width={300} height={300} alt="banner" />
               <Separator className="mt-2 bg-black h-[1px]" />
               <div className="flex justify-between mt-2">
