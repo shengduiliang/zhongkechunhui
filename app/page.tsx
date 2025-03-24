@@ -45,20 +45,23 @@ const BrandConceptContent = () => {
           </div>
           <div className="mt-6">
             中国农科院与中科春晖联合孵化科技品牌，<br/>
-            中科态好乐始终以“科技守护全龄段骨骼原理“为使命<br/>
-            聚焦活性肽靶向再生技术与精准营养干预体系，<br />
+            中科态好乐始终以“科技守护全龄段骨骼原力“为使命<br/>
+            聚焦活性肽靶向再生技术与精准营养干预<br />
+            体系，<br/>
             用医药级研发标准打造骨骼肽健康，<br />
-            为全年龄段提供从细胞到骨骼的立体养护体验。
+            为全年龄段提供从细胞到骨骼的立体养护<br/>
+            体验。
           </div>
           <div className="mt-6">
-            中科态好乐以首创「120°C」活性锁鲜<br/>
+            中科态好乐以首创「120°C活性锁鲜」<br/>
             专利技术为核心，<br/>
             突破传统肽类不耐高温限制，<br/>
-            实现骨胶原吸收率提升300%成为骨骼肽的行业领军,<br/>
+            实现骨胶原吸收率提升300%成为骨骼肽<br/>
+            的行业领军<br/>
             让每一口营养都直抵骨骼需求。<br/>
           </div>
         </div>
-        <div className="flex-1 relative ml-8">
+        <div className="flex-1 relative ml-16 aspect-800/571">
           <Image src={'/home/brand-concept.png'} fill alt="banner" />
         </div>
       </div>
@@ -130,8 +133,7 @@ const CoreTechnologyContent = () => {
         <div className="pr-32">
           <div className="text-green-800 text-2xl font-bold">特殊膳食骨胶原蛋白活性肽</div>
           <div className="text-lg mt-6">
-            中科活性肽产品属于特殊膳食，比食品更营养<br/>
-            比药品更健康。<br/>
+            中科活性肽产品属于特殊膳食，<br/>
             国内以活性肽技术为核心的健康产品行业的先驱<br/>
             与引领者。<br/>
             我们始终秉持 科技赋能，肽启健康” 的核心<br/>
@@ -140,7 +142,7 @@ const CoreTechnologyContent = () => {
           </div>
           <div className="text-lg mt-8">
             肽能促进营养吸收排出代谢废物，改善细胞新陈<br/>
-            代谢：肽能激活细胞活性，抑制细胞病病变，变<br/>
+            代谢：肽能激活细胞活性，抑制细胞病病变<br/>
             提高免疫力：肽能修复变性或受损细胞，清除体<br/>
             内自由基：肽对人的细胞活性，功能活动，生命<br/>
             存在来讲，具有不可替代的重要性。
@@ -176,7 +178,7 @@ const HotSalesContent = () => {
           hotSalesList.map((item, index) => (
             <div className="col-4 px-8" key={index}>
               <Image src={item.img} width={300} height={300} alt="banner" />
-              <Separator className="mt-2 bg-black h-[1px]" />
+              <Separator className="mt-2 bg-black h-[2px]" />
               <div className="flex justify-between mt-2">
                 <div className="text-sm tracking-widest">{item.desc}</div>
                 <div className="text-sm tracking-widest">{item.type}</div>
@@ -193,8 +195,8 @@ const HotSalesContent = () => {
 
 const HotSalesOfflineContent = () => {
   const hotSalesOfflineList = [
-    { img: '/home/hot-sales-offline-0.png', title: '治疗骨质疏松', desc: '骨胶原蛋白肽·特殊膳食', type: '专业版', effect: '健骨+强骨+壮骨'},
-    { img: '/home/hot-sales-offline-1.png', title: '抗衰抗美颜', desc: '骨胶原蛋白肽·特殊膳食', type: '红粉版', effect: '抗衰老+产后修复'},
+    { img: '/home/hot-sales-offline-0.png', title: '治疗骨质疏松', desc: '“鱼类”胶原蛋白肽·特殊膳食', type: '专业版', effect: '健骨+强骨+壮骨'},
+    { img: '/home/hot-sales-offline-1.png', title: '抗衰抗美颜', desc: '“鱼类”胶原蛋白肽·特殊膳食', type: '红粉版', effect: '抗衰老+产后修复'},
     { img: '/home/hot-sales-offline-2.png', title: '增强免疫力', desc: '骨胶原蛋白肽·特殊膳食', type: '白金版', effect: '激发肌体活力+提高免疫力'},
     { img: '/home/hot-sales-offline-3.png', title: '改善睡眠', desc: '骨胶原蛋白肽·特殊膳食', type: '白金版', effect: '提高肌体耐力+生理代谢'},
     { img: '/home/hot-sales-offline-4.png', title: '改善心脑血管', desc: '运动营养食品·瑙芯舒', type: '', effect: '活血化瘀+化痰祛湿+平肝通络'},
@@ -209,7 +211,7 @@ const HotSalesOfflineContent = () => {
           hotSalesOfflineList.map((item, index) => (
             <div className="col-4 px-8" key={index}>
               <Image src={item.img} width={300} height={300} alt="banner" />
-              <Separator className="mt-2 bg-black h-[1px]" />
+              <Separator className="mt-2 bg-black h-[2px]" />
               <div className="flex justify-between mt-2">
                 <div className="text-sm tracking-widest">{item.desc}</div>
                 <div className="text-sm tracking-widest">{item.type}</div>
