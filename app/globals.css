@@ -17,7 +17,12 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
-  --color-profession: oklch(84.62% 0.0862 83.07);
+  --color-profession: oklch(0.90 0.07 71);
+  --color-pink: oklch(0.97 0.01 17);
+  --color-platinum: oklch(0.93 0.01 256);
+  --color-strawberry: oklch(0.95 0.03 237);
+  --color-naoxinshu: oklch(0.92 0.00 49);
+  --color-huganqing: oklch(0.87 0.00 0);
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
