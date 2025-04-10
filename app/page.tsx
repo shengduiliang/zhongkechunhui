@@ -10,7 +10,8 @@ const BannerContent = () => {
   const imgList = [
     '/home/carousel-0.jpg',
     '/home/carousel-1.jpg',
-    '/home/carousel-2.jpg'
+    '/home/carousel-2.jpg',
+    '/home/carousel-3.jpg',
   ]
   return (
     <Carousel className="w-full" plugins={[Autoplay({ delay: 5000})]} opts={{ loop: true}}>
@@ -36,29 +37,18 @@ const BrandConceptContent = () => {
     <ContentWrapper className="mt-16">
       <div className="text-3xl font-bold text-black ml-4">品牌理念</div>
       <Separator className="my-6 bg-black h-[1px]" />
-      <div className="flex mx-4">
+      <div className="flex">
         <div className="text-lg">
-          <div>
-            中科态好乐<br/>
-            以中科院生物科技为根基<br/>
-            重塑全年龄骨骼健康新生态
+          <div className="text-green-800 text-4xl font-black">中科态好乐</div>
+          <div className="text-lime-600 text-3xl font-black mt-7 ml-5">“每日一杯肽，焕您好状态”</div>
+          <div className="text-xl mt-7">
+            态好乐牌成立于2024年，为广东中科春晖<br/>健康科技有限公司,与中国农科院农产品研究<br/>所联合研发品牌,主打特殊膳食胶原蛋白肽、<br/>药食同源等产品。
           </div>
-          <div className="mt-6">
-            中国农科院与中科春晖联合孵化科技品牌，<br/>
-            中科态好乐始终以“科技守护全龄段骨骼原力“为使命<br/>
-            聚焦活性肽靶向再生技术与精准营养干预<br />
-            体系，<br/>
-            用医药级研发标准打造骨骼肽健康，<br />
-            为全年龄段提供从细胞到骨骼的立体养护<br/>
-            体验。
+          <div className="text-xl mt-7">
+            态好乐主要产品为胶原蛋白肽、护肝、心脑<br/>血管等一系列大健康特殊膳食产品，由中国<br/>农科院张春晖博士团队经过20年研发打造中<br/>国唯一国家队品牌。
           </div>
-          <div className="mt-6">
-            中科态好乐以首创「120°C活性锁鲜」<br/>
-            专利技术为核心，<br/>
-            突破传统肽类不耐高温限制，<br/>
-            实现骨胶原吸收率提升300%成为骨骼肽<br/>
-            的行业领军<br/>
-            让每一口营养都直抵骨骼需求。<br/>
+          <div className="text-xl mt-7">
+            态好乐产品覆盖儿童、中年、老人群体，针<br/>对骨骼、美容、免疫力、肝肾以及心脑血管<br/>养护等方面，致力于全方位解决国民健康问<br/>题，为国民健康保驾护航。
           </div>
         </div>
         <div className="flex-1 relative ml-16 aspect-800/571">
@@ -72,7 +62,7 @@ const BrandConceptContent = () => {
 const IndividualContent = () => {
   return (
     <ContentWrapper className="mt-20">
-      <div className="text-3xl font-bold text-black ml-4">个人简介</div>
+      <div className="text-3xl font-bold text-black ml-4">研发团队</div>
       <Separator className="my-6 bg-black h-[1px]" />
       <div className="flex mx-4">
         <div className="w-[400px] relative">
@@ -92,7 +82,7 @@ const IndividualContent = () => {
               <Image src={'/home/patent.png'} width={120} height={120} alt="banner" />
           </div>
           <div className="mt-6 ">
-            <div className="font-bold text-green-800 text-2xl">学术职称荣誉</div>
+            <div className="font-bold text-lime-600 text-2xl">学术职称荣誉</div>
             <div className="mt-3 text-sm text-black">
               <span className="font-black">国家农业科研杰出人才：</span>
               <span>科技部中青年科技创新领军人才，享受国务院政府特殊津贴专家</span>
@@ -119,6 +109,29 @@ const IndividualContent = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="relative h-[744px]">
+        <Image src="/home/研发团队底图.png" className="absolute -z-10" width={1200} height={744} alt="研发团队底图"/>
+        <div className="pt-8" />
+        <Image src="/home/态好乐品牌团队介绍.png" width={550} height={60} className="h-[60px] -ml-2" alt="态好乐品牌团队介绍"/>
+        <div className="flex justify-between">
+          <div className="mt-8 flex flex-col items-start flex-1">
+            <div className="ml-7 rounded-3xl bg-sky-800 text-white px-4 py-1 text-lg">1.国家级研发团队</div>
+            <div className="text-green-800 font-bold ml-14 mt-9">中国农业科学院</div>
+            <div className="ml-14 mt-2 leading-6">
+            是国务院批准成立的三大科学院之一，是全国规模最大<br/>学科最全、综合实力最强的一个国家级农业科研机构。<br/>担负着全国农业重大的基础研究，重大的应用研究和高<br/>新技术产业开发研究的一个任务，
+            </div>
+          </div>
+          <div className="mt-8 flex flex-col items-start flex-1">
+            <div className="ml-7 rounded-3xl bg-sky-800 text-white px-4 py-1 text-lg">2.研发团队组成</div>
+            <div className="flex mt-4 justify-between w-full px-8">
+              <Image src="/home/团队标签1.png" width={289} height={381} alt="团队标签1" className="w-[150px]" />
+              <Image src="/home/团队标签2.png" width={289} height={381} alt="团队标签2" className="w-[150px]" />
+              <Image src="/home/团队标签3.png" width={289} height={381} alt="团队标签3" className="w-[150px]" />
+            </div>
+          </div>
+        </div>
+        <Image src="/home/研发团队专利.png" width={2266} height={593} className="w-full" alt="研发团队专利" />
       </div>
     </ContentWrapper>
   )
