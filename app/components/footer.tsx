@@ -89,8 +89,8 @@ export default function Footer() {
         </div>
         <div className="footer-product">
           <ProductContent />
-          <div className="text-lg font-bold mt-8">科研创新</div>
-          <div className="text-lg font-bold mt-2">关于我们</div>
+          <Link className="text-lg font-bold mt-8 block" href="/scientific">科研创新</Link>
+          <Link className="text-lg font-bold mt-2 block" href="/about">关于我们</Link>
         </div>
         <div className="footer-contact">
           <div className="text-lg font-bold">联系地址：</div>

@@ -90,12 +90,12 @@ const INavbarItems = [
   },
   {
     label: "科研创享",
-    href: "#",
+    href: "/scientific",
     match: (pathname: string) => pathname === '/scientific'
   },
   {
     label: "关于我们",
-    href: "#",
+    href: "/about",
     match: (pathname: string) => pathname === '/about'
   }
 ]

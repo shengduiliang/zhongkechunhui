@@ -142,26 +142,17 @@ const CoreTechnologyContent = () => {
     <ContentWrapper className="mt-20">
       <div className="text-3xl font-bold text-black ml-4">核心技术</div>
       <Separator className="my-6 bg-black h-[1px]" />
-      <div className="my-12 flex pl-2 pr-20 items-start">
+      <div className="my-12 flex pr-20 items-start justify-around">
         <div className="pr-32">
-          <div className="text-green-800 text-2xl font-bold">特殊膳食骨胶原蛋白活性肽</div>
-          <div className="text-lg mt-6">
-            中科活性肽产品属于特殊膳食，<br/>
-            国内以活性肽技术为核心的健康产品行业的先驱<br/>
-            与引领者。<br/>
-            我们始终秉持 科技赋能，肽启健康” 的核心<br/>
-            研发理念，依托前沿生物科技，不断探索活性肽<br/>
-            在健康领域的无限可能。
+          <div className="text-green-800 text-2xl font-bold pl-6">特殊膳食骨胶原蛋白活性肽</div>
+          <div className="bg-sky-50 text-base p-6 text-justify mt-5">
+            态好乐活性肽产品属于特殊膳食<br/>国内第一个国家队研发的特殊膳食、药食同源产品<br/>以研发为核心，依托前沿生物技术，探索健康领域<br/>的无限可能
           </div>
-          <div className="text-lg mt-8">
-            肽能促进营养吸收排出代谢废物，改善细胞新陈<br/>
-            代谢：肽能激活细胞活性，抑制细胞病病变<br/>
-            提高免疫力：肽能修复变性或受损细胞，清除体<br/>
-            内自由基：肽对人的细胞活性，功能活动，生命<br/>
-            存在来讲，具有不可替代的重要性。
+          <div className="bg-sky-50 text-base p-6 text-justify mt-5">
+            肽是人体生命中的重要物质<br/>促进营养吸收排出代谢废物，改善细胞新陈代谢：<br/>肽能激活细胞活性，抑制细胞病病变提高免疫力：<br/>肽能修复变性或受损细胞，清除体内自由基：<br/>
           </div>
         </div>
-        <Image src='/home/core-technology.png' width={600} height={709} alt="banner" className="flex-1" />
+        <Image src='/home/core-technology.png' width={600} height={709} alt="banner" className="w-[550px]" />
       </div>
       <div className="flex justify-end">
         <div className="cursor-pointer flex items-center">
