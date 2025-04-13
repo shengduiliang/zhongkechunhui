@@ -2,7 +2,7 @@
 
 import { Carousel, CarouselApi, CarouselContent, CarouselItem, useCarousel } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
-import { Flag } from "lucide-react"
+
 import Image from "next/image"
 import { useEffect, useState } from "react"
 
