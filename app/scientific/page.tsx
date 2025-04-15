@@ -1,6 +1,8 @@
 import ContentWrapper from "@/components/ui/content-wrapper";
 import Image from "next/image";
 import ImageCarousel from "./components/image-carousel";
+import articleList from "@/constant/articleList";
+import Link from "next/link";
 
 const KeyTechnologyContent = () => {
   return (
@@ -94,6 +96,24 @@ const InventionContent = () => {
   )
 }
 
+const ArticleListContent = () => {
+  return (
+    <ContentWrapper className="my-16">
+      <div className="mx-[100px]">
+        <div className="text-3xl font-bold text-black mb-7">相关科普</div>
+        {
+          articleList.sort((a, b) => a.level - b.level).map((article, index) => (
+            <Link className="mt-4 flex justify-between" key={index} href={`/article/${index + 1}`}>
+              <div>{article.title}</div>
+              <div>{article.date}</div>
+            </Link>
+          ))
+        }
+      </div>
+    </ContentWrapper>
+  )
+}
+
 export default function ScientificPage() {
   return (
     <div className="about-us-page">
@@ -101,6 +121,7 @@ export default function ScientificPage() {
       <ScientificContent />
       <CoreTechnologyContent />
       <InventionContent />
+      <ArticleListContent />
     </div>
   )
 }

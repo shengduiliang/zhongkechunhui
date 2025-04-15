@@ -5,6 +5,8 @@ import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import ContentWrapper from "@/components/ui/content-wrapper";
 import { Separator } from "@radix-ui/react-separator";
+import Link from "next/link";
+import articleList from "@/constant/articleList";
 
 const BannerContent = () => {
   const imgList = [
@@ -230,6 +232,38 @@ const HotSalesOfflineContent = () => {
   )
 }
 
+const NewsContent = () => {
+  return (
+    <ContentWrapper className="my-20">
+      <div className="mx-[50px]">
+        <div className="flex items-center">
+          <Image src='/home/news-title.png' width={60} height={60} alt="banner" />
+          <div className="text-3xl font-bold text-black ml-4 flex-1">新闻动态</div>
+          <Link href="/scientific" className="block p-2 text-white" style={{backgroundColor: 'oklch(53.2% 0.157 121.589)'}}>探索更多 &gt;</Link>
+        </div>
+        <div className="flex mt-7 justify-around">
+          <Image src="/home/news-content.jpg" width={400} height={240} className="w-[400px]" alt="新闻" />
+          {
+            [{ news: articleList[2], id: 3}, { news: articleList[3], id: 4}, { news: articleList[0], id: 1}].map(({news, id}, index) => (
+              <div key={index} className="w-[190px]">
+                <div className="text-xs">{news.date}</div>
+                <Link className="mt-2 block" href={`/article/${id}`}>{news.title}</Link>
+                <div className="my-4 bg-blue-500 h-[3px] w-[40px]" />
+                <div className="text-xs leading-5 text-justify">{news.overview}</div>
+              </div>
+            ))
+          }
+        </div>
+        <div className="mt-6 w-[450px]">
+          <Link className="block" href={`/article/2`}>{articleList[1].title}</Link>
+          <div className="text-xs leading-5 text-justify mt-2">{articleList[1].overview}</div>
+          <div className="text-xs mt-2">{articleList[1].date}</div>
+        </div>
+      </div>
+    </ContentWrapper>
+  )
+}
+
 export default function HomePage() {
   return (
     <div className="home-page">
@@ -239,6 +273,7 @@ export default function HomePage() {
       <CoreTechnologyContent />
       <HotSalesContent />
       <HotSalesOfflineContent />
+      <NewsContent />
     </div>
   );
 }
