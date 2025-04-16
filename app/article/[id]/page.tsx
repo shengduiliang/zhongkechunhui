@@ -26,7 +26,7 @@ export default async function ArticlePage({
             <Image src={'/home/patent.png'} width={100} height={120} alt="banner" />
           </div>
           <div className="leading-6 text-sm" dangerouslySetInnerHTML={{ __html: article.content }} />
-          <Separator className="bg-black mt-8"/>
+          {/* <Separator className="bg-black mt-8"/> */}
           <Link className="mt-8 block" href={id > 1 ? `/article/${id - 1}` : "#"}>上一篇：{id > 1 ? articleList[id - 2].title : '无'}</Link>
           <Link className="mt-2 block" href={id < articleList.length? `/article/` + (Number(id) + 1) : "#"}>下一篇：{id < articleList.length ? articleList[id].title : '无'}</Link>
         </div>
